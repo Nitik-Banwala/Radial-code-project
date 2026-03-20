@@ -9,7 +9,7 @@ const HeroBanner = () => {
     return (
         <Swiper
             modules={[Autoplay, Pagination, EffectFade]}
-            effect="fade" // smooth fade like OTT platforms
+            effect="fade" 
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             loop={true}
