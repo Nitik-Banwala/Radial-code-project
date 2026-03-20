@@ -31,8 +31,8 @@ const Navbar = () => {
                 </a>
                 <ul
                     className={`${hamburgerState
-                            ? "translate-x-0 bg-white"
-                            : "translate-x-full md:translate-x-0"
+                        ? "translate-x-0 bg-white"
+                        : "translate-x-full md:translate-x-0"
                         } flex flex-col justify-center items-center gap-4
             fixed top-0 left-0 h-screen z-10 w-full 
             transition-all duration-200 ease-linear
@@ -40,8 +40,8 @@ const Navbar = () => {
             xl:gap-8 lg:gap-5 md:gap-3`}
                 >
                     {NAV_LIST.map((nav, i) => (
-                        <li key={i} className="text-grey leading-150 whitespace-nowrap">
-                            <a href="" className="">{nav.title}</a>
+                        <li key={i} className={`${nav.title === "Blog" ? "font-semibold text-black" : " text-grey font-normal"}  leading-150 whitespace-nowrap`}>
+                            <a href={nav.href}>{nav.title}</a>
                         </li>
                     ))}
                     <div className="group w-fit xl:ml-28.25 lg:ml-20 md:ml-4 ml-2">
