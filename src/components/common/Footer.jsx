@@ -5,7 +5,7 @@ import Icons from "./Icons";
 const Footer = () => {
     return (
         <footer className="w-full bg-white-grey px-4">
-            <div className="max-w-360 mx-auto px-6 lg:px-20">
+            <div className="max-w-285 w-full mx-auto">
                 <div className="flex min-[1180px]:justify-between min-[1180px]:flex-row flex-col pt-12 lg:pt-20 pb-16">
                     <div className="max-w-[338.1px]">
                         <a href="">
@@ -83,7 +83,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-custom-grey/10">
+            <div className="border-t border-black/10 ">
                 <div className="max-w-360 mx-auto px-6 lg:px-20 py-6 text-center font-normal opacity-80 leading-[150%] text-black text-base">
                     Copyright © {new Date().getFullYear()} Pupilo. All Rights Reserved.
                 </div>
