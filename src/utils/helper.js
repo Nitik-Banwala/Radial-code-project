@@ -81,9 +81,9 @@ export const CARD_DATA = [
             img: "/assets/images/png/Bloge1.png",
             date: "By John doe on 2 June 2025",
             title: "The Code Learning Blog: For Kids, Teens, and Adults",
+            title2: "Explore the World of Coding: Tips and Insights for All Ages",
             paragraph:
                 "Discover coding resources, tips, and stories designed for learners of every age. Whether you're a curious kid.",
-            title2: "Explore the World of Coding: Tips and Insights for All Ages",
             paragraph2:
                 "Discover coding tips, inspiring stories, and expert insights crafted for learners of all ages. Whether you're a curious student, a working professional, or someone exploring a new passion, our blog is here to guide you. From beginner basics to real-world projects, explore how anyone—from age 10 to 50—can start coding and grow.",
         },
@@ -124,7 +124,7 @@ export const CARD_DATA = [
                 {
                     id: "tools-and-platforms",
                     heading: "Tools & Platforms to Begin Your Journey",
-                    img: "//assets/images/png/Bloge1.png",
+                    img: "/assets/images/png/Bloge1.png",
                     paragraph:
                         "The right tools make all the difference. Here's a breakdown of the most user-friendly and effective platforms to get started:",
                     points: [
@@ -179,8 +179,11 @@ export const CARD_DATA = [
             img: "/assets/images/png/bloge2.png",
             date: "By Jane Smith on 10 July 2025",
             title: "Learning to Code at Any Age",
+            title2: "From First Line to Full Stack: Journeys from Our Students",
             paragraph:
                 "Discover coding resources, tips, and stories designed for learners of every age. Whether you're a curious kid.",
+            paragraph2:
+                "Every developer has a story — a moment when something clicked, a project that changed everything, or a mentor who believed in them. At our coding center, we've watched hundreds of students transform from complete beginners into confident developers.",
         },
         blog: {
             img: "/assets/images/webp/pupiloTwo.webp",
@@ -279,8 +282,11 @@ export const CARD_DATA = [
             img: "/assets/images/png/bloge3.png",
             date: "By Alex Johnson on 18 August 2025",
             title: "The Power of Learning at Every Stage",
+            title2: "Your Coding Companion: Learn, Practice, and Grow with Us",
             paragraph:
                 "Discover coding resources, tips, and stories designed for learners of every age. Whether you're a curious kid.",
+            paragraph2:
+                "Learning to code is a journey, not a destination. The best coders never stop learning — they keep practicing, exploring new tools, and pushing their limits. That's exactly what we're here to support.",
         },
         blog: {
             img: "/assets/images/webp/pupiloThree.webp",
@@ -294,7 +300,7 @@ export const CARD_DATA = [
             sections: [
                 {
                     id: "learn-the-right-way",
-                    heading: " Learn the Right Way from Day One",
+                    heading: "Learn the Right Way from Day One",
                     img: "/assets/images/png/Bloge1.png",
                     paragraph:
                         "Most beginners make the mistake of jumping between tutorials without building anything. Here's how to learn effectively from the start:",
@@ -319,7 +325,7 @@ export const CARD_DATA = [
                 },
                 {
                     id: "practice-tools",
-                    heading: " Practice Tools We Recommend",
+                    heading: "Practice Tools We Recommend",
                     img: "/assets/images/webp/pupiloTwo.webp",
                     paragraph:
                         "Practice is everything in coding. Here are the best tools to sharpen your skills daily:",
@@ -344,7 +350,7 @@ export const CARD_DATA = [
                 },
                 {
                     id: "grow-your-skills",
-                    heading: " Grow Your Skills Beyond the Basics",
+                    heading: "Grow Your Skills Beyond the Basics",
                     img: "/assets/images/webp/pupiloOne.webp",
                     paragraph:
                         "Once you have the basics down, the real fun begins. Here's how to keep growing and stay ahead:",
@@ -374,14 +380,16 @@ export const CARD_DATA = [
             ],
         },
     },
-
     {
         pupilo: {
             img: "/assets/images/png/bloge4.png",
-            date: "By Alex Johnson on 18 August 2025",
+            date: "By Maria Chen on 5 September 2025",
             title: "The Power of Learning at Every Stage",
+            title2: "Behind the Code: Stories and Resources for Every Student",
             paragraph:
                 "Discover coding resources, tips, and stories designed for learners of every age. Whether you're a curious kid.",
+            paragraph2:
+                "Coding looks polished on the outside — sleek apps, beautiful websites, powerful software. But behind every great product is a developer who struggled, debugged for hours, and kept going anyway.",
         },
         blog: {
             img: "/assets/images/webp/pupiloTwo.webp",
@@ -451,7 +459,7 @@ export const CARD_DATA = [
                         "Every student who walks through our doors has a unique story. And every one of those stories deserves to be told. Here's why sharing your journey matters:",
                     points: [
                         {
-                            text: "Sharing your progress ly on LinkedIn or Twitter builds your personal brand and attracts opportunities.",
+                            text: "Sharing your progress on LinkedIn or Twitter builds your personal brand and attracts opportunities.",
                         },
                         {
                             text: "Writing about what you learn — even as a beginner — helps others and reinforces your own understanding.",
@@ -460,7 +468,7 @@ export const CARD_DATA = [
                             text: "Your struggles and breakthroughs can inspire someone else who is exactly where you were 6 months ago.",
                         },
                         {
-                            text: "Building in  creates accountability and keeps you consistent when motivation is low.",
+                            text: "Building in public creates accountability and keeps you consistent when motivation is low.",
                         },
                     ],
                     useCoding: [
