@@ -1,0 +1,13 @@
+export const HOME = "/";
+export const PROGRAMS = "/programs";
+export const WHY_PUPILO = "/why-pupilo";
+export const LEARN_WITH_PUPILO = "/learn-with-pupilo";
+export const BLOG = "/blog";
+export const INSTA = "https://www.instagram.com/radialcode/";
+export const FACEBOOK = "https://www.facebook.com/radialcode/";
+export const TIKTOK = "https://www.tiktok.com/about?lang=en";
+export const YOUTUBE = "https://www.youtube.com/@radialcode";
+export const LINKEDIN = "https://in.linkedin.com/company/radialcode";
+export const WHATSAPP = "https://www.radialcode.com/contact-us/";
+export const MAIL = "https://www.radialcode.com/contact-us";
+export const PHONE = "https://www.radialcode.com/contact-us";
