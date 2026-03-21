@@ -4,11 +4,11 @@ export const IMAGES = [
     "/assets/images/webp/python.webp",
     "/assets/images/webp/minecraft.webp",
     "/assets/images/webp/tailwind.webp",
-    "/assets/images/png/scratch.png",
-    "/assets/images/png/roblox.png",
-    "/assets/images/png/python.png",
-    "/assets/images/png/minecraft.png",
-    "/assets/images/png/tailwind.png",
+    "/assets/images/webp/scratch.webp",
+    "/assets/images/webp/roblox.webp",
+    "/assets/images/webp/python.webp",
+    "/assets/images/webp/minecraft.webp",
+    "/assets/images/webp/tailwind.webp",
 ];
 
 import {
