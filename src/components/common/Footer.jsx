@@ -15,11 +15,11 @@ const Footer = () => {
                                 className="w-[252.1px] h-7.25 mb-6"
                             />
                         </a>
-                        <p className="font-normal text-base leading-[150%] tracking-normal text-black opacity-70 mb-6">
+                        <p className="font-normal text-base leading-150 tracking-normal text-black opacity-70 mb-6">
                             Pupilo is Africa's most loved online coding platform for kids and
                             teens—where every child can code, create, and thrive.
                         </p>
-                        <h3 className="font-semibold text-base leading-[100%] h-6 mb-3">
+                        <h3 className="font-semibold text-base leading-100 h-6 mb-3">
                             Subscribe to our Newsletter
                         </h3>
                         <div className="flex max-[400px]:flex-col flex-row max-[400px]:p-1.5 items-stretch sm:items-center bg-black/4 min-[400px]:rounded-[400px] rounded-2xl sm:rounded-full w-full max-w-[338.1px] gap-2 sm:gap-0">
@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="border-t border-black/10 ">
-                <div className="max-w-360 mx-auto px-6 lg:px-20 py-6 text-center font-normal opacity-80 leading-[150%] text-black text-base">
+                <div className="max-w-360 mx-auto px-6 lg:px-20 py-6 text-center font-normal opacity-80 leading-150 text-black text-base">
                     Copyright © {new Date().getFullYear()} Pupilo. All Rights Reserved.
                 </div>
             </div>

@@ -40,7 +40,7 @@ const Blogs = () => {
                                 <h3 className=" text-xl sm:text-custom-2xl font-semibold leading-120 mb-4">
                                     {featuredCard.title2}
                                 </h3>
-                                <p className="text-grey text-base font-normal inter leading-160 flex-1 max-w-[514px]">
+                                <p className="text-grey text-base font-normal inter leading-160 flex-1 max-w-128.5">
                                     {featuredCard.paragraph2}
                                 </p>
                                 <Button
@@ -63,7 +63,7 @@ const Blogs = () => {
                                     <img
                                         src={card.img2}
                                         alt={card.title}
-                                        className="w-full h-full object-cover rounded-[12px] group-hover:scale-105 transition duration-500"
+                                        className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition duration-500"
                                     />
                                 </div>
                                 <div className="pl-4 flex flex-col  flex-1">

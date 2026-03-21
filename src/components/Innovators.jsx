@@ -15,7 +15,7 @@ const Innovators = ({ text, description }) => {
                 <div className="flex py-[52.1px] px-4 sm:px-8 flex-col items-center justify-center text-center">
                     <div className="max-w-[535.1px] flex flex-col text-center items-center justify-center text-white">
                         <Heading
-                            className={"gap-6 text-center max-w-[535px] mx-auto flex items-center justify-center"}
+                            className={"gap-6 text-center max-w-128.5 mx-auto flex items-center justify-center"}
                             text={text}
                             description={description}
                             pClass={"leading-150 text-center opacity-80 max-w-[451px]"}
