@@ -4,7 +4,13 @@ export const IMAGES = [
     "/assets/images/webp/python.webp",
     "/assets/images/webp/minecraft.webp",
     "/assets/images/webp/tailwind.webp",
+    "/assets/images/png/scratch.png",
+    "/assets/images/png/roblox.png",
+    "/assets/images/png/python.png",
+    "/assets/images/png/minecraft.png",
+    "/assets/images/png/tailwind.png",
 ];
+
 import {
     BLOG,
     FACEBOOK,
@@ -20,15 +26,7 @@ import {
     WHY_PUPILO,
     YOUTUBE,
 } from "./constant";
-
-export const images = [
-    "/assets/images/png/scratch.png",
-    "/assets/images/png/roblox.png",
-    "/assets/images/png/python.png",
-    "/assets/images/png/minecraft.png",
-    "/assets/images/png/tailwind.png",
-];
-
+   
 export const NAV_LIST = [
     {
         title: "Home",
