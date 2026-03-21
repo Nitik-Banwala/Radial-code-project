@@ -5,7 +5,7 @@ import Icons from "./common/Icons";
 const Innovators = ({ text, description }) => {
     return (
         <div className="px-4">
-            <div className="max-w-285 mx-auto relative rounded-3xl   mb-[160.1px] bg-purple h-auto overflow-hidden">
+            <div className="max-w-285 mx-auto relative rounded-3xl mb-[160.1px] bg-purple h-auto overflow-hidden">
                 <div className="z-10 absolute max-w-[445.1px] w-full max-h-[45.1px] h-full">
                     <Icons icon={"next_tech"} />
                 </div>

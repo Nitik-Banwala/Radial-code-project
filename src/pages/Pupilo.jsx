@@ -36,10 +36,31 @@ const Pupilo = () => {
 
   return (
     <div>
-      <div className="flex max-w-285 w-full mx-auto mt-20 lg:gap-19.5 gap-6 px-4 ">
+      <div className="flex flex-col sm:flex-row max-w-285 w-full mx-auto mt-20 lg:gap-19.5 gap-6 px-4 ">
+        <div className="p-4 border sm:hidden flex border-black/10 rounded-2xl shadow-xl">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-lg leading-150 font-semibold text-black">
+              In this article
+            </h2>
+            <div className="flex flex-col gap-4">
+              {sections.map((section, index) => (
+                <a
+                  href={"#" + section.id}
+                  key={index}
+                  className={`leading-150 transition duration-200 text-xs lg:text-base ${activeId === section.id
+                    ? "text-purple font-semibold"
+                    : "text-light-grey hover:text-purple"
+                    }`}
+                >
+                  {section.heading}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col max-w-182.5 w-full gap-15 xl:px-0">
           <div>
-            <h1 className="xl:text-5xl lg:text-4xl text-2xl  font-semibold leading-120">
+            <h1 className="xl:text-5xl lg:text-4xl text-2xl font-semibold leading-120">
               {title}
             </h1>
             <p className="text-black mt-6 font-medium lg:text-base text-sm">
@@ -104,11 +125,10 @@ const Pupilo = () => {
               <a
                 href={"#" + section.id}
                 key={index}
-                className={`leading-150 transition duration-200 text-xs lg:text-base ${
-                  activeId === section.id
-                    ? "text-purple font-semibold"
-                    : "text-light-grey hover:text-purple"
-                }`}
+                className={`leading-150 transition duration-200 text-xs lg:text-base ${activeId === section.id
+                  ? "text-purple font-semibold"
+                  : "text-light-grey hover:text-purple"
+                  }`}
               >
                 {section.heading}
               </a>
