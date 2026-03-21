@@ -52,13 +52,11 @@ const Blogs = () => {
                     )}
                     <div className="flex flex-col gap-y-6">
                         {sideCards.map((card, index) => (
-                            <div
-                                onClick={() =>
+                            <div onClick={() =>
                                     navigate(card.title.toLowerCase().replaceAll(" ", "-"))
                                 }
                                 key={index}
-                                className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-row cursor-pointer group"
-                            >
+                                className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-col min-[500px]:flex-row cursor-pointer group">
                                 <div className="overflow-hidden w-[130.1px] sm:w-[160.1px] shrink-0">
                                     <img
                                         src={card.img2}
@@ -66,8 +64,8 @@ const Blogs = () => {
                                         className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition duration-500"
                                     />
                                 </div>
-                                <div className="pl-4 flex flex-col  flex-1">
-                                    <p className="text-[#8C52FF] text-sm font-normal leading-150">
+                                <div className=" min-[500px]:pl-4 flex flex-col  flex-1">
+                                    <p className="text-[#8C52FF] mt-2 min-[500px]:mt-0 text-sm font-normal leading-150">
                                         {card.date}
                                     </p>
                                     <h3 className="text-black sm:text-xl text-sm font-medium leading-120 mt-4.25 mb-4">
