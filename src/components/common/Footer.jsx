@@ -26,7 +26,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Email Address"
-                                className="flex-1 bg-transparent px-3 py-2.5 sm:py-0 text-sm outline-none w-full"
+                                className="flex-1 bg-transparent px-5 py-2.5 sm:py-0 text-sm outline-none w-full"
                             />
                             <Button
                                 text={"Subscribe"}
@@ -39,7 +39,7 @@ const Footer = () => {
                             <h3 className="font-semibold text-[13px] sm:text-[16px] mb-3">
                                 {FOOTER_LINKS[0].title}
                             </h3>
-                            <ul className="space-y-3 text-gray-600">
+                            <ul className="space-y-3 text-black/80">
                                 {FOOTER_LINKS[0].links.map((link, i) => (
                                     <li key={i} className="cursor-pointer hover:text-black transition text-[14px] sm:text-[16px]">
                                         <a href="">{link}</a>
@@ -51,7 +51,7 @@ const Footer = () => {
                             <h3 className="font-semibold text-[13px] sm:text-[16px] mb-3">
                                 {FOOTER_LINKS[1].title}
                             </h3>
-                            <ul className="space-y-3 text-gray-600">
+                            <ul className="space-y-3 text-black/80">
                                 {FOOTER_LINKS[1].links.map((link, i) => (
                                     <li key={i} className="cursor-pointer hover:text-black transition text-[14px] sm:text-[16px]">
                                         <a href="">{link}</a>
@@ -61,7 +61,7 @@ const Footer = () => {
                         </div>
                         <div className=" max-w-[212.1px]">
                             <h3 className="font-semibold text-[13px] sm:text-[16px] mb-3">Contact Us</h3>
-                            <ul className="space-y-3 text-gray-600 mb-8">
+                            <ul className="space-y-3 text-black/70 mb-8">
                                 {CONTACT_ICONS.map((item, index) => (
                                     <li key={index} className="cursor-pointer hover:text-black flex items-center gap-2">
                                         <a target="_blank" href={item.link} className="flex items-center gap-2 text-[14px] sm:text-[16px]">

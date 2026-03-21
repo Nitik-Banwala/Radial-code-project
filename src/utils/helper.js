@@ -560,3 +560,4 @@ export const CONTACT_ICONS = [
         text: "+234 098 765 4321",
     },
 ];
+

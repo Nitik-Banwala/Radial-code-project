@@ -18,7 +18,7 @@ const Innovators = ({ text, description }) => {
                             className={"gap-6 text-center max-w-[535px] mx-auto flex items-center justify-center"}
                             text={text}
                             description={description}
-                            pClass={"leading-150 text-center max-w-[451px]"}
+                            pClass={"leading-150 text-center opacity-80 max-w-[451px]"}
                         />
                     </div>
                     <Button
@@ -32,7 +32,7 @@ const Innovators = ({ text, description }) => {
                             />
                         }
                         className={
-                            "group hover:border hover:border-white hover:text-white hover:bg-dark-purple text-purple mt-6 rounded-[400px] bg-white flex flex-row justify-center items-center gap-3.5 max-w-[189.1px] w-full h-[52.1px]"
+                            "group hover:border hover:border-white hover:text-white hover:bg-dark-purple text-purple mt-6 rounded-[400px] bg-white flex flex-row justify-center items-center gap-3.5 sm:max-w-[189.1px] max-w-[149.1px] w-full h-[42.1px] sm:h-[52.1px]"
                         }
                     />
                 </div>

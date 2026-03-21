@@ -40,7 +40,7 @@ const Blogs = () => {
                                 <h3 className=" text-xl sm:text-custom-2xl font-semibold leading-120 mb-4">
                                     {featuredCard.title2}
                                 </h3>
-                                <p className="text-gray-500 text-base font-normal inter leading-160 flex-1 max-w-[514px]">
+                                <p className="text-grey text-base font-normal inter leading-160 flex-1 max-w-[514px]">
                                     {featuredCard.paragraph2}
                                 </p>
                                 <Button
