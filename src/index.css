@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
-*{
+* {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -14,6 +14,7 @@
 @theme {
   /* Colors */
   --color-grey: #4e4e4e;
+  --color-light-grey: #747474;
   --color-purple: #8c52ff;
   --color-yellow: #f9dc00;
   --color-black: #010101;
@@ -25,23 +26,23 @@
   --text-custom-2xl: 28px;
   --text-custom-3xl: 32px;
 
-  /* / line height */ 
+  /* / line height */
   --leading-100: 100%;
   --leading-120: 120%;
   --leading-150: 150%;
   --leading-160: 160%;
 }
 
-li{
+.li {
   position: relative;
   width: fit-content;
 }
 
-li:hover {
+.li:hover {
   color: var(--color-purple);
 }
 
-li::before {
+.li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -52,7 +53,7 @@ li::before {
   transition: width 0.3s ease;
 }
 
-li:hover::before {
+.li:hover::before {
   width: 100%;
 }
 
