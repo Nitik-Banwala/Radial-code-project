@@ -27,7 +27,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="flex-1 bg-transparent px-3 py-2.5 sm:py-0 text-sm outline-none w-full"
+                className="flex-1 bg-transparent px-5 py-2.5 sm:py-0 text-sm outline-none w-full"
               />
               <Button
                 text={"Subscribe"}

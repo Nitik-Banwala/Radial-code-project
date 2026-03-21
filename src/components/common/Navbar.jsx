@@ -48,7 +48,7 @@ const Navbar = () => {
               key={i}
               className={`${nav.path === location.pathname ? "font-semibold  text-black" : " text-grey font-normal"}  leading-150 whitespace-nowrap`}
             >
-              <Link to={nav.path} className="li">
+              <Link to={nav.path} onClick={() => setHamburgerState(false)} className="li">
                 {nav.title}
               </Link>
             </li>
@@ -70,14 +70,14 @@ const Navbar = () => {
         </ul>
         {hamburgerState ? (
           <span
-            className="md:hidden block text-2xl z-10"
+            className="md:hidden block text-2xl z-10 cursor-pointer"
             onClick={() => handleHamburgerClick()}
           >
             <RxCross2 />
           </span>
         ) : (
           <span
-            className="md:hidden block text-2xl z-10"
+            className="md:hidden block text-2xl z-10 cursor-pointer"
             onClick={() => handleHamburgerClick()}
           >
             <GiHamburgerMenu />

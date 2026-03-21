@@ -76,7 +76,7 @@ export const FOOTER_LINKS = [
 export const CARD_DATA = [
   {
     pupilo: {
-      img: "/assets/images/png/Bloge1.png",
+      img: "/assets/images/webp/blogOne.webp",
       date: "By John doe on 2 June 2025",
       title: "The Code Learning Blog: For Kids, Teens, and Adults",
       title2: "Explore the World of Coding: Tips and Insights for All Ages",
@@ -122,7 +122,7 @@ export const CARD_DATA = [
         {
           id: "tools-and-platforms",
           heading: "Tools & Platforms to Begin Your Journey",
-          img: "/assets/images/png/Bloge1.png",
+          img: "/assets/images/webp/blogOne.webp",
           paragraph:
             "The right tools make all the difference. Here's a breakdown of the most user-friendly and effective platforms to get started:",
           points: [
@@ -174,7 +174,7 @@ export const CARD_DATA = [
   },
   {
     pupilo: {
-      img: "/assets/images/png/bloge2.png",
+      img: "/assets/images/webp/blogTwo.webp",
       date: "By Jane Smith on 10 July 2025",
       title: "Learning to Code at Any Age",
       title2: "From First Line to Full Stack: Journeys from Our Students",
@@ -185,7 +185,7 @@ export const CARD_DATA = [
     },
     blog: {
       img: "/assets/images/webp/pupiloTwo.webp",
-      img2: "/assets/images/png/bloge2.png",
+      img2: "/assets/images/webp/blogTwo.webp",
       date: "By Jane Smith on 10 July 2025",
       title: "From First Line to Full Stack: Journeys from Our Students",
       paragraph:
@@ -246,7 +246,7 @@ export const CARD_DATA = [
         {
           id: "your-journey-starts",
           heading: "Your Journey Starts Today",
-          img: "/assets/images/png/Bloge1.png",
+          img: "/assets/images/webp/blogOne.webp",
           paragraph:
             "The only difference between you and our successful students is that they started. Here's what you can do right now:",
           points: [
@@ -277,7 +277,7 @@ export const CARD_DATA = [
   },
   {
     pupilo: {
-      img: "/assets/images/png/bloge3.png",
+      img: "/assets/images/webp/blogThree.webp",
       date: "By Alex Johnson on 18 August 2025",
       title: "The Power of Learning at Every Stage",
       title2: "Your Coding Companion: Learn, Practice, and Grow with Us",
@@ -288,7 +288,7 @@ export const CARD_DATA = [
     },
     blog: {
       img: "/assets/images/webp/pupiloThree.webp",
-      img2: "/assets/images/png/bloge3.png",
+      img2: "/assets/images/webp/blogThree.webp",
       date: "By Alex Johnson on 18 August 2025",
       title: "Your Coding Companion: Learn, Practice, and Grow with Us",
       paragraph:
@@ -299,7 +299,7 @@ export const CARD_DATA = [
         {
           id: "learn-the-right-way",
           heading: "Learn the Right Way from Day One",
-          img: "/assets/images/png/Bloge1.png",
+          img: "/assets/images/webp/blogOne.webp",
           paragraph:
             "Most beginners make the mistake of jumping between tutorials without building anything. Here's how to learn effectively from the start:",
           points: [
@@ -380,7 +380,7 @@ export const CARD_DATA = [
   },
   {
     pupilo: {
-      img: "/assets/images/png/bloge4.png",
+      img: "/assets/images/webp/blogFour.webp",
       date: "By Maria Chen on 5 September 2025",
       title: "The Power of Learning at Every Stage",
       title2: "Behind the Code: Stories and Resources for Every Student",
@@ -391,7 +391,7 @@ export const CARD_DATA = [
     },
     blog: {
       img: "/assets/images/webp/pupiloTwo.webp",
-      img2: "/assets/images/png/bloge4.png",
+      img2: "/assets/images/webp/blogFour.webp",
       date: "By Maria Chen on 5 September 2025",
       title: "Behind the Code: Stories and Resources for Every Student",
       paragraph:
@@ -402,7 +402,7 @@ export const CARD_DATA = [
         {
           id: "struggles-and-breakthroughs",
           heading: "The Real Struggles Behind Learning to Code",
-          img: "/assets/images/png/bloge1.png",
+          img: "/assets/images/webp/blogOne.webp",
           paragraph:
             "Nobody talks about the hard parts enough. Here are the most common struggles students face — and how to overcome them:",
           points: [
@@ -488,37 +488,37 @@ export const FAMILIES_DATA_LIST = [
     name: "Kayla Steyn",
     description:
       "My son shifted from watching cartoons to building interactive stories! Pupilo’s ScratchJr classes sparked his creativity.",
-    image: "/assets/images/webp/family-one.webp",
+    image: "/assets/images/webp/familyOne.webp",
   },
   {
     name: "Naledi Moeketsi",
     description:
       "I never thought my son would enjoy math, but through Pupilo’s game design classes, he’s learning coding and math at the same time.",
-    image: "/assets/images/webp/family-two.webp",
+    image: "/assets/images/webp/familyTwo.webp",
   },
   {
     name: "Johan Botha",
     description:
       "The live coding sessions are fantastic! My daughter used to shy away from technology — now she’s proudly building animations in Scratch.",
-    image: "/assets/images/webp/family-three.webp",
+    image: "/assets/images/webp/familyThree.webp",
   },
   {
     name: "Kayla Steyn",
     description:
       "My son shifted from watching cartoons to building interactive stories! Pupilo’s ScratchJr classes sparked his creativity.",
-    image: "/assets/images/webp/family-one.webp",
+    image: "/assets/images/webp/familyOne.webp",
   },
   {
     name: "Naledi Moeketsi",
     description:
       "I never thought my son would enjoy math, but through Pupilo’s game design classes, he’s learning coding and math at the same time.",
-    image: "/assets/images/webp/family-two.webp",
+    image: "/assets/images/webp/familyTwo.webp",
   },
   {
     name: "Johan Botha",
     description:
       "The live coding sessions are fantastic! My daughter used to shy away from technology — now she’s proudly building animations in Scratch.",
-    image: "/assets/images/webp/family-three.webp",
+    image: "/assets/images/webp/familyThree.webp",
   },
 ];
 export const SOCIAL_ICONS = [
