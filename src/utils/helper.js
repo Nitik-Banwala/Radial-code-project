@@ -21,13 +21,7 @@ import {
     YOUTUBE,
 } from "./constant";
 
-export const images = [
-    "/assets/images/png/scratch.png",
-    "/assets/images/png/roblox.png",
-    "/assets/images/png/python.png",
-    "/assets/images/png/minecraft.png",
-    "/assets/images/png/tailwind.png",
-];
+
 
 export const NAV_LIST = [
     {
