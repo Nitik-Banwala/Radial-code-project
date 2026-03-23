@@ -8,7 +8,7 @@ export const IMAGES = [
     "/assets/images/webp/roblox.webp",
     "/assets/images/webp/python.webp",
     "/assets/images/webp/minecraft.webp",
-    "/assets/images/webp/tailwind.webp",
+    "/assets/images/webp/tailwind.webp"
 ];
 
 import {
