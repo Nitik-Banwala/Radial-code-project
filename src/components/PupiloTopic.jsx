@@ -4,9 +4,14 @@ import Button from "./common/Button";
 import Heading from "./common/Heading";
 import { useNavigate, useParams } from "react-router-dom";
 
-function PupiloTopic({ text, description }) {
+function PupiloTopic({ text, description, className }) {
     const { slug } = useParams();
     const navigate = useNavigate();
+
+    const handleClick = (card) => {
+        navigate(`/blog/${card.pupilo.title2.toLowerCase().replaceAll(" ", "-")}`)
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
 
     return (
         <div className="py-40 max-lg:py-20">
@@ -25,9 +30,7 @@ function PupiloTopic({ text, description }) {
                         {CARD_DATA.slice(0, 3).map((card, i) => (
                             <div
                                 key={i}
-                                onClick={() =>
-                                    navigate(card.pupilo.title2.toLowerCase().replaceAll(" ", "-"))
-                                }
+                                onClick={() => (handleClick(card))}
                                 className="shadow-[0px_0px_32px_0px_rgba(0,0,0,0.06)] p-4 rounded-3xl hover:scale-105 transition-all duration-300 cursor-pointer"
                             >
                                 <div className="flex flex-col gap-4">
@@ -55,7 +58,7 @@ function PupiloTopic({ text, description }) {
                     </div>
 
                     <Button
-                        className="mt-10 flex items-center py-3.5 px-8.75 text-nowrap text-base gap-[13.98px] bg-yellow max-w-40 rounded-[400px] hover:text-yellow hover:bg-black group"
+                        className={`${className} mt-10 flex items-center py-3.5 px-8.75 text-nowrap text-base gap-[13.98px] bg-yellow max-w-40 rounded-[400px] hover:text-yellow hover:bg-black group`}
                         text="View All"
                         icon={
                             <Icons
