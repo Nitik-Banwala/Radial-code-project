@@ -15,11 +15,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<BlogPage />} />
+        <Route path="/blog" element={<BlogPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/programs" element={<ProgramsPage />} />
         <Route path="/why-pupilo" element={<WhyPupilo />} />
         <Route path="/learn-with-pupilo" element={<LearnWithPupiloPage />} />
-        <Route path="/:slug" element={<Pupilo />} />
+        <Route path="/blog/:slug" element={<Pupilo />} />
       </Routes>
       <Footer />
     </>

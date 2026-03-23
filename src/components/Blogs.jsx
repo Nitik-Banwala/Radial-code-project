@@ -11,7 +11,14 @@ const Blogs = () => {
         CARD_DATA[2]?.blog,
         CARD_DATA[3]?.blog,
     ].filter(Boolean);
-
+    const handelClick = (card) => {
+        navigate(`/blog/${card.title.toLowerCase().replaceAll(" ", "-")}`)
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+    const handelClick2 = (featuredCard) => {
+        navigate(`/blog/${featuredCard.title2.toLowerCase().replaceAll(" ", "-")}`)
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
     return (
         <section className="w-full lg:mt-30 md:mt-20 mt-10 bg-[url('/assets/images/webp/s-tow.webp')] bg-cover bg-center py-20 px-4 relative overflow-hidden">
             <div className="max-w-285 mx-auto relative z-10">
@@ -22,7 +29,7 @@ const Blogs = () => {
                     {featuredCard && (
                         <div
                             onClick={() =>
-                                navigate(featuredCard.title2.toLowerCase().replaceAll(" ", "-"))
+                                handelClick2(featuredCard)
                             }
                             className="bg-white rounded-2xl lg:max-w-[560.1px] w-full p-5 overflow-hidden flex flex-col cursor-pointer group"
                         >
@@ -52,9 +59,7 @@ const Blogs = () => {
                     )}
                     <div className="flex flex-col gap-y-6">
                         {sideCards.map((card, index) => (
-                            <div onClick={() =>
-                                navigate(card.title.toLowerCase().replaceAll(" ", "-"))
-                            }
+                            <div onClick={() => handelClick(card)}
                                 key={index}
                                 className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-col min-[600px]:flex-row cursor-pointer group">
                                 <div className="overflow-hidden min-[600px]:w-[160.1px] max-w-127.5 max-h-60 shrink-0">

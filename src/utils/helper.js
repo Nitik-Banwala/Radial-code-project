@@ -86,8 +86,8 @@ export const CARD_DATA = [
                 "Discover coding tips, inspiring stories, and expert insights crafted for learners of all ages. Whether you're a curious student, a working professional, or someone exploring a new passion, our blog is here to guide you. From beginner basics to real-world projects, explore how anyone—from age 10 to 50—can start coding and grow.",
         },
         blog: {
-            img: "/assets/images/webp/pupiloTwo.webp",
-            img2: "/assets/images/png/bloge4.png",
+            img: "/assets/images/webp/pupiloOne.webp",
+            img2: "/assets/images/png/blogeFour.png",
             date: "By Maria Chen on 5 September 2025",
             title: "explore the World of Coding: Tips and Insights for All Ages",
             paragraph:
@@ -98,7 +98,7 @@ export const CARD_DATA = [
                 {
                     id: "struggles-and-breakthroughs",
                     heading: "The Real Struggles Behind Learning to Code",
-                    img: "/assets/images/png/bloge1.png",
+                    img: "public/assets/images/webp/pupiloThree.webp",
                     paragraph:
                         "Nobody talks about the hard parts enough. Here are the most common struggles students face — and how to overcome them:",
                     points: [
