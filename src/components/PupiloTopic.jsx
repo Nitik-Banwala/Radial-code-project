@@ -9,7 +9,7 @@ function PupiloTopic({ text, description }) {
     const navigate = useNavigate();
 
     return (
-        <div className="py-40">
+        <div className="py-40 max-lg:py-20">
             <div className="max-w-285 mx-auto max-[1170px]:px-4">
                 <div className="flex flex-col items-center">
                     <div className="flex flex-col items-center gap-3 text-center max-w-125.25 mx-auto pb-10">
@@ -36,7 +36,7 @@ function PupiloTopic({ text, description }) {
                                         {card.pupilo.date}
                                     </span>
                                     <div className="flex flex-col gap-3">
-                                        <h4 className="text-2xl font-semibold leading-120 tracking-normal text-black">
+                                        <h4 className="max-sm:text-xl text-2xl font-semibold leading-120 tracking-normal text-black">
                                             {card.pupilo.title}
                                         </h4>
                                         <p className="font-normal leading-150 tracking-normal text-black opacity-80">

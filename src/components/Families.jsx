@@ -10,7 +10,7 @@ import "swiper/css";
 const Families = () => {
   const swiperRef = useRef(null);
   return (
-    <div className="max-w-330 w-full mx-auto flex flex-col md:gap-10 gap-5 items-center px-4 mb-10 md:mb-20 lg:mb-40">
+    <div className=" max-w-330 w-full mx-auto flex flex-col md:gap-10 gap-5 items-center px-4 mb-10 md:mb-20 lg:mb-40">
       <Heading
         text={"Hear What Families Say About Pupilo"}
         className={"md:text-left text-center"}

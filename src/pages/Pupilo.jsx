@@ -7,12 +7,16 @@ import { useEffect, useRef, useState } from "react";
 const Pupilo = () => {
   const { slug } = useParams();
   const sectionRefs = useRef([]);
+  console.log(slug);
+
 
   const [activeId, setActiveId] = useState();
 
   const matchedBlog = CARD_DATA.find(
     (item) => item.blog.title.toLowerCase().replaceAll(" ", "-") === slug,
   )?.blog;
+  console.log(matchedBlog);
+
 
   if (!matchedBlog) return <p>Blog not found!</p>;
 
