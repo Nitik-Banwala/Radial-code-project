@@ -9,7 +9,7 @@ function PupiloTopic({ text, description, className }) {
     const navigate = useNavigate();
 
     const handleClick = (card) => {
-        navigate(`/blog/${card.pupilo.title2.toLowerCase().replaceAll(" ", "-")}`)
+        navigate(`/blog/${card.pupilo.title.toLowerCase().replaceAll(" ", "-")}`)
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
 
@@ -19,7 +19,7 @@ function PupiloTopic({ text, description, className }) {
                 <div className="flex flex-col items-center">
                     <div className="flex flex-col items-center gap-3 text-center max-w-125.25 mx-auto pb-10">
                         <Heading
-                            pClass={"text-center text-grey"}
+                            descriptionClass={"text-center text-grey"}
                             text={text}
                             description={description}
                             className={"gap-3 items-center"}

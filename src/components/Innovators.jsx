@@ -18,7 +18,7 @@ const Innovators = ({ text, description }) => {
                             className={"gap-6 text-center max-w-138.5 mx-auto flex items-center justify-center"}
                             text={text}
                             description={description}
-                            pClass={"leading-150 text-center opacity-80 max-w-[451px]"}
+                            descriptionClass={"leading-150 text-center opacity-80 max-w-[451px]"}
                         />
                     </div>
                     <Button

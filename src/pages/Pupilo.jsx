@@ -62,12 +62,17 @@ const Pupilo = () => {
   const [activeId, setActiveId] = useState();
 
   const matchedBlog = CARD_DATA.find(
-    (item) => item.blog.title.toLowerCase().replaceAll(" ", "-") === slug,
+    (item) => item.blog.title.toLowerCase().replaceAll(" ", "-") === slug ||
+      item.pupilo.title.toLowerCase().replaceAll(" ", "-") === slug
   )?.blog;
 
   if (!matchedBlog) return <p>Blog not found!</p>;
 
-  const { sections, intro, img, title, date } = matchedBlog;
+  const { sections, intro, img, title, date, blog } = matchedBlog;
+  console.log(title);
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,7 +102,7 @@ const Pupilo = () => {
         <div className="flex flex-col max-w-182.5 w-full gap-15 xl:px-0">
           <div>
             <h1 className="xl:text-5xl lg:text-4xl text-2xl font-semibold leading-120">
-              {title}
+              {slug.replaceAll("-", " ")}
             </h1>
             <p className="text-black mt-6 font-medium lg:text-base text-sm">
               {date}
@@ -117,7 +122,7 @@ const Pupilo = () => {
               ref={(el) => (sectionRefs.current[i] = el)}
               id={section.id}
               key={i}
-              className="flex flex-col gap-5"
+              className="flex scroll-mt-30 flex-col gap-5"
             >
               <h2 className="lg:text-custom-3xl text-xl leading-120 font-bold">
                 {i + 1 + "."} {section.heading}

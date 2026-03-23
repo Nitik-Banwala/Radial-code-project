@@ -1,16 +1,3 @@
-export const IMAGES = [
-    "/assets/images/webp/scratch.webp",
-    "/assets/images/webp/roblox.webp",
-    "/assets/images/webp/python.webp",
-    "/assets/images/webp/minecraft.webp",
-    "/assets/images/webp/tailwind.webp",
-    "/assets/images/webp/scratch.webp",
-    "/assets/images/webp/roblox.webp",
-    "/assets/images/webp/python.webp",
-    "/assets/images/webp/minecraft.webp",
-    "/assets/images/webp/tailwind.webp",
-];
-
 import {
     BLOG,
     FACEBOOK,
@@ -26,6 +13,19 @@ import {
     WHY_PUPILO,
     YOUTUBE,
 } from "./constant";
+
+export const IMAGES = [
+    "/assets/images/webp/scratch.webp",
+    "/assets/images/webp/roblox.webp",
+    "/assets/images/webp/python.webp",
+    "/assets/images/webp/minecraft.webp",
+    "/assets/images/webp/tailwind.webp",
+    "/assets/images/webp/scratch.webp",
+    "/assets/images/webp/roblox.webp",
+    "/assets/images/webp/python.webp",
+    "/assets/images/webp/minecraft.webp",
+    "/assets/images/webp/tailwind.webp",
+];
 
 export const NAV_LIST = [
     {

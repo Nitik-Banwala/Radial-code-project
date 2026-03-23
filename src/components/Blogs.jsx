@@ -20,7 +20,7 @@ const Blogs = () => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
     return (
-        <section className="w-full lg:mt-30 md:mt-20 mt-10 bg-[url('/assets/images/webp/s-tow.webp')] bg-cover bg-center py-20 px-4 relative overflow-hidden">
+        <section className="w-full lg:mt-30 md:mt-20 mt-10 bg-[url('/assets/images/webp/blogs_Background.webp')] bg-cover bg-center py-20 px-4 relative overflow-hidden">
             <div className="max-w-285 mx-auto relative z-10">
                 <h2 className="text-white text-3xl sm:text-5xl font-semibold text-center mb-10 leading-120">
                     Our Latest Blogs
@@ -31,13 +31,13 @@ const Blogs = () => {
                             onClick={() =>
                                 handelClick2(featuredCard)
                             }
-                            className="bg-white rounded-2xl lg:max-w-[560.1px] w-full p-5 overflow-hidden flex flex-col cursor-pointer group"
+                            className="bg-white rounded-2xl transform transition duration-200 hover:-translate-y-2 lg:max-w-[560.1px] w-full p-5 overflow-hidden flex flex-col cursor-pointer group"
                         >
                             <div className="overflow-hidden min-h-60 min-[600px]:max-h-75.25">
                                 <img
                                     src={featuredCard.img}
                                     alt={featuredCard.title}
-                                    className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition duration-500"
+                                    className="w-full h-full object-cover rounded-xl transition duration-500"
                                 />
                             </div>
                             <div className=" flex flex-col flex-1">
@@ -61,12 +61,12 @@ const Blogs = () => {
                         {sideCards.map((card, index) => (
                             <div onClick={() => handelClick(card)}
                                 key={index}
-                                className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-col min-[600px]:flex-row cursor-pointer group">
+                                className="bg-white transform transition duration-200 hover:-translate-y-2 rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-col min-[600px]:flex-row cursor-pointer group">
                                 <div className="overflow-hidden min-[600px]:w-[160.1px] max-w-127.5 max-h-60 shrink-0">
                                     <img
                                         src={card.img2}
                                         alt={card.title}
-                                        className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition duration-500"
+                                        className="w-full h-full object-cover rounded-xl transition duration-500"
                                     />
                                 </div>
                                 <div className=" min-[600px]:pl-4 flex flex-col flex-1">

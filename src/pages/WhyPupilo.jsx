@@ -1,5 +1,5 @@
 const WhyPupilo = () => {
-  return <div className="max-w-285 w-full mx-auto">WhyPupilo</div>;
+  return <div className="max-w-285 w-full flex text-center text-2xl items-center justify-center my-5 mx-auto">WhyPupilo</div>;
 };
 
 export default WhyPupilo;

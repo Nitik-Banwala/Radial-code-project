@@ -61,7 +61,7 @@ const Icons = ({ icon, pathClass, className }) => {
                 />
             </svg>
         ),
-        logIn: (
+        log_in: (
             <svg
                 width="24"
                 height="24"
