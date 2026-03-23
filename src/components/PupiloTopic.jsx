@@ -3,15 +3,21 @@ import { CARD_DATA } from "../utils/helper";
 import Button from "./common/Button";
 import Heading from "./common/Heading";
 import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function PupiloTopic({ text, description, className }) {
     const { slug } = useParams();
+    const [showBlog, setShowBlog] = useState(null)
     const navigate = useNavigate();
 
     const handleClick = (card) => {
         navigate(`/blog/${card.pupilo.title.toLowerCase().replaceAll(" ", "-")}`)
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
+    const temp = CARD_DATA.filter((item) => item.pupilo?.title.toLowerCase().replaceAll(" ", "-") !== slug)
+
+
+
 
     return (
         <div className="py-40 max-lg:py-20">
@@ -27,7 +33,8 @@ function PupiloTopic({ text, description, className }) {
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {CARD_DATA.slice(0, 3).map((card, i) => (
+                        {/* {CARD_DATA.slice(0, 3).map((card, i) => ( */}
+                        {temp.map((card, i) => (
                             <div
                                 key={i}
                                 onClick={() => (handleClick(card))}
