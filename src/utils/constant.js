@@ -1,8 +1,8 @@
-export const HOME = "/";
+export const HOME = "/home";
 export const PROGRAMS = "/programs";
 export const WHY_PUPILO = "/why-pupilo";
 export const LEARN_WITH_PUPILO = "/learn-with-pupilo";
-export const BLOG = "/blog";
+export const BLOG = "/";
 export const INSTA = "https://www.instagram.com/radialcode/";
 export const FACEBOOK = "https://www.facebook.com/radialcode/";
 export const TIKTOK = "https://www.tiktok.com/about?lang=en";

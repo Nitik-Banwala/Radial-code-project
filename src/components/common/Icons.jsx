@@ -33,6 +33,34 @@ const Icons = ({ icon, pathClass, className }) => {
                 </defs>
             </svg>
         ),
+        hero_icon: (
+            <svg
+                width="34"
+                height="35"
+                viewBox="0 0 34 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M9.17188 24.2011L25.3208 12.4023"
+                    stroke="#8C52FF"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                />
+                <path
+                    d="M12.4219 33.2217L31.5336 27.3273"
+                    stroke="#8C52FF"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                />
+                <path
+                    d="M1.60742 17.9951L13.1525 1.66382"
+                    stroke="#8C52FF"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                />
+            </svg>
+        ),
         logIn: (
             <svg
                 width="24"

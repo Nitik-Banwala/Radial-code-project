@@ -4,7 +4,13 @@ export const IMAGES = [
     "/assets/images/webp/python.webp",
     "/assets/images/webp/minecraft.webp",
     "/assets/images/webp/tailwind.webp",
+    "/assets/images/webp/scratch.webp",
+    "/assets/images/webp/roblox.webp",
+    "/assets/images/webp/python.webp",
+    "/assets/images/webp/minecraft.webp",
+    "/assets/images/webp/tailwind.webp",
 ];
+
 import {
     BLOG,
     FACEBOOK,
@@ -21,14 +27,6 @@ import {
     YOUTUBE,
 } from "./constant";
 
-export const images = [
-    "/assets/images/png/scratch.png",
-    "/assets/images/png/roblox.png",
-    "/assets/images/png/python.png",
-    "/assets/images/png/minecraft.png",
-    "/assets/images/png/tailwind.png",
-];
-
 export const NAV_LIST = [
     {
         title: "Home",
@@ -36,7 +34,7 @@ export const NAV_LIST = [
     },
     {
         title: "Programs",
-        Path: PROGRAMS,
+        path: PROGRAMS,
     },
     {
         title: "Why Pupilo?",
@@ -44,11 +42,11 @@ export const NAV_LIST = [
     },
     {
         title: "Learn with Pupilo",
-        Path: LEARN_WITH_PUPILO,
+        path: LEARN_WITH_PUPILO,
     },
     {
         title: "Blog",
-        Path: BLOG,
+        path: BLOG,
     },
 ];
 
@@ -78,53 +76,54 @@ export const FOOTER_LINKS = [
 export const CARD_DATA = [
     {
         pupilo: {
-            img: "/assets/images/png/Bloge1.png",
+            img: "/assets/images/webp/blogOne.webp",
             date: "By John doe on 2 June 2025",
             title: "The Code Learning Blog: For Kids, Teens, and Adults",
-            title2: "Explore the World of Coding: Tips and Insights for All Ages",
+            title2: "explore the World of Coding: Tips and Insights for All Ages",
             paragraph:
                 "Discover coding resources, tips, and stories designed for learners of every age. Whether you're a curious kid.",
             paragraph2:
                 "Discover coding tips, inspiring stories, and expert insights crafted for learners of all ages. Whether you're a curious student, a working professional, or someone exploring a new passion, our blog is here to guide you. From beginner basics to real-world projects, explore how anyone—from age 10 to 50—can start coding and grow.",
         },
         blog: {
-            img: "/assets/images/webp/pupiloOne.webp",
-            date: "By John doe on 2 June 2025",
-            title: "Explore the World of Coding: Tips and Insights for All Ages",
+            img: "/assets/images/webp/pupiloTwo.webp",
+            img2: "/assets/images/png/bloge4.png",
+            date: "By Maria Chen on 5 September 2025",
+            title: "explore the World of Coding: Tips and Insights for All Ages",
             paragraph:
-                "Discover coding tips, inspiring stories, and expert insights crafted for learners of all ages. Whether you're a curious student, a working professional, or someone exploring a new passion, our blog is here to guide you. From beginner basics to real-world projects, explore how anyone—from age 10 to 50—can start coding and grow.",
+                "Coding looks polished on the outside — sleek apps, beautiful websites, powerful software. But behind every great product is a developer who struggled, debugged for hours, and kept going anyway.",
             intro:
-                "In today's digital world, coding is no longer just a career skill — it's a life skill. Whether you're a curious 10-year-old building your first game or a 50-year-old professional exploring a new career, the world of coding is open to everyone. At our teaching center, we believe that age should never be a barrier to learning, especially when it comes to something as powerful and creative as coding.",
+                "Coding looks polished on the outside — sleek apps, beautiful websites, powerful software. But behind every great product is a developer who struggled, debugged for hours, and kept going anyway. In this blog, we pull back the curtain and share the real stories behind the code.",
             sections: [
                 {
-                    id: "coding-for-everyone",
-                    heading: "Coding Is for Everyone",
-                    img: "/assets/images/webp/pupiloTwo.webp",
+                    id: "struggles-and-breakthroughs",
+                    heading: "The Real Struggles Behind Learning to Code",
+                    img: "/assets/images/png/bloge1.png",
                     paragraph:
-                        "One of the biggest misconceptions? 'I'm too old' or 'I'm too young' to start coding. Let's kill that noise.",
+                        "Nobody talks about the hard parts enough. Here are the most common struggles students face — and how to overcome them:",
                     points: [
                         {
-                            label: "For Kids (10–17)",
-                            text: "Platforms like Scratch, Code.org, and Tynker turn programming into play. Visual blocks teach logic, sequencing, and storytelling — making it fun while building foundational skills.",
+                            label: "Imposter Syndrome",
+                            text: "Almost every developer feels like they don't belong or aren't 'good enough'. The truth? Even senior developers Google basic things daily. You are not behind — you are learning.",
                         },
                         {
-                            label: "Young Adults & College Students (18–24)",
-                            text: "This is prime time. Dive into Python, JavaScript, or C++ to start building apps, games, or websites. Whether you're pursuing a CS degree or self-teaching, now's the time to stack those skills.",
+                            label: "Tutorial Hell",
+                            text: "Watching tutorials endlessly without building anything real. The fix: after every tutorial, close it and try to rebuild the project from scratch without looking.",
                         },
                         {
-                            label: "Professionals (25–40)",
-                            text: "Coding isn't just for developers. Learning automation, data analysis, or web development can supercharge your current role. Tools like Python for data, no-code/low-code platforms, and API integration can give you an edge.",
+                            label: "Debugging Frustration",
+                            text: "Spending hours on a bug that turns out to be a missing semicolon. This is normal. Debugging is a skill — the more you do it, the faster and calmer you get.",
                         },
                         {
-                            label: "Career Shifters & Hobbyists (40–50+)",
-                            text: "People in their 40s and 50s are pivoting into tech roles or starting freelance dev gigs. You don't need to compete with 22-year-olds. Instead, leverage your domain experience and layer in technical skills.",
+                            label: "Losing Motivation",
+                            text: "Progress feels slow and invisible. Track your wins — even small ones. Look back at what you couldn't do 3 months ago. The progress is real, even when it doesn't feel like it.",
                         },
                     ],
                 },
                 {
                     id: "tools-and-platforms",
                     heading: "Tools & Platforms to Begin Your Journey",
-                    img: "/assets/images/png/Bloge1.png",
+                    img: "/assets/images/webp/blogOne.webp",
                     paragraph:
                         "The right tools make all the difference. Here's a breakdown of the most user-friendly and effective platforms to get started:",
                     points: [
@@ -143,40 +142,40 @@ export const CARD_DATA = [
                     ],
                 },
                 {
-                    id: "why-coding-matters",
-                    heading: "Why Learning to Code Matters",
+                    id: "your-story-matters",
+                    heading: "Your Story Matters Too",
                     img: "/assets/images/webp/pupiloOne.webp",
                     paragraph:
-                        "Coding isn't just about writing lines of syntax. It's about solving real problems. Here's how it's transforming everyday lives:",
+                        "Every student who walks through our doors has a unique story. And every one of those stories deserves to be told. Here's why sharing your journey matters:",
                     points: [
                         {
-                            text: "A 13-year-old girl in India used Scratch to build an anti-bullying game and won global recognition.",
+                            text: "Sharing your progress on LinkedIn or Twitter builds your personal brand and attracts opportunities.",
                         },
                         {
-                            text: "A mid-level accountant automated tedious Excel work using Python scripts, saving 15+ hours a week.",
+                            text: "Writing about what you learn — even as a beginner — helps others and reinforces your own understanding.",
                         },
                         {
-                            text: "A retired teacher built an educational app for local schools after learning Swift on Udemy.",
+                            text: "Your struggles and breakthroughs can inspire someone else who is exactly where you were 6 months ago.",
                         },
                         {
-                            text: "A single mom transitioned into a remote web dev career by taking a part-time bootcamp — now earning double.",
+                            text: "Building in public creates accountability and keeps you consistent when motivation is low.",
                         },
                     ],
                     useCoding: [
-                        "Enhance your job performance",
-                        "Create tools that serve your community",
-                        "Teach others and inspire change",
-                        "Build a side hustle",
+                        "Share your journey on LinkedIn",
+                        "Start a coding blog",
+                        "Post your projects on GitHub",
+                        "Inspire the next generation",
                     ],
                     outro:
-                        "Coding is not just a career path — it's a mindset shift. It teaches you how to think, how to solve, how to create. Whether you're 10 or 50, there's a space in the tech world waiting for you to step in. So start now. Be curious. Stay hungry. Build things that matter. And remember: The future doesn't wait — neither should you.",
+                        "Behind every line of code is a human story — of curiosity, persistence, failure, and triumph. Your story is still being written. Whether you're on chapter one or chapter ten, keep going. The coding world needs more diverse voices, more unique perspectives, and more people like you. We're proud to be part of your story.",
                 },
             ],
         },
     },
     {
         pupilo: {
-            img: "/assets/images/png/bloge2.png",
+            img: "/assets/images/webp/blogTwo.webp",
             date: "By Jane Smith on 10 July 2025",
             title: "Learning to Code at Any Age",
             title2: "From First Line to Full Stack: Journeys from Our Students",
@@ -187,7 +186,7 @@ export const CARD_DATA = [
         },
         blog: {
             img: "/assets/images/webp/pupiloTwo.webp",
-            img2: "/assets/images/png/bloge2.png",
+            img2: "/assets/images/webp/blogTwo.webp",
             date: "By Jane Smith on 10 July 2025",
             title: "From First Line to Full Stack: Journeys from Our Students",
             paragraph:
@@ -221,34 +220,9 @@ export const CARD_DATA = [
                     ],
                 },
                 {
-                    id: "learning-path",
-                    heading: "The Learning Path That Works",
-                    img: "/assets/images/webp/pupiloTwo.webp",
-                    paragraph:
-                        "All our successful students followed a structured path. Here's what that journey typically looks like:",
-                    points: [
-                        {
-                            label: "Phase 1 — Foundations",
-                            text: "HTML, CSS, and basic JavaScript. Understanding how the web works, building static pages, and getting comfortable with a code editor.",
-                        },
-                        {
-                            label: "Phase 2 — Interactivity",
-                            text: "DOM manipulation, events, and APIs. Students start building dynamic projects like to-do apps, weather widgets, and quiz games.",
-                        },
-                        {
-                            label: "Phase 3 — Frameworks",
-                            text: "React for frontend, Node.js for backend. This is where projects start looking and feeling like real applications.",
-                        },
-                        {
-                            label: "Phase 4 — Full Stack",
-                            text: "Connecting frontend to backend, working with databases, deploying projects live. Students graduate with a full portfolio of real projects.",
-                        },
-                    ],
-                },
-                {
                     id: "your-journey-starts",
                     heading: "Your Journey Starts Today",
-                    img: "/assets/images/png/Bloge1.png",
+                    img: "/assets/images/webp/blogOne.webp",
                     paragraph:
                         "The only difference between you and our successful students is that they started. Here's what you can do right now:",
                     points: [
@@ -279,7 +253,7 @@ export const CARD_DATA = [
     },
     {
         pupilo: {
-            img: "/assets/images/png/bloge3.png",
+            img: "/assets/images/webp/blogThree.webp",
             date: "By Alex Johnson on 18 August 2025",
             title: "The Power of Learning at Every Stage",
             title2: "Your Coding Companion: Learn, Practice, and Grow with Us",
@@ -290,7 +264,7 @@ export const CARD_DATA = [
         },
         blog: {
             img: "/assets/images/webp/pupiloThree.webp",
-            img2: "/assets/images/png/bloge3.png",
+            img2: "/assets/images/webp/blogThree.webp",
             date: "By Alex Johnson on 18 August 2025",
             title: "Your Coding Companion: Learn, Practice, and Grow with Us",
             paragraph:
@@ -301,7 +275,7 @@ export const CARD_DATA = [
                 {
                     id: "learn-the-right-way",
                     heading: "Learn the Right Way from Day One",
-                    img: "/assets/images/png/Bloge1.png",
+                    img: "/assets/images/webp/blogOne.webp",
                     paragraph:
                         "Most beginners make the mistake of jumping between tutorials without building anything. Here's how to learn effectively from the start:",
                     points: [
@@ -382,7 +356,7 @@ export const CARD_DATA = [
     },
     {
         pupilo: {
-            img: "/assets/images/png/bloge4.png",
+            img: "/assets/images/webp/blogFour.webp",
             date: "By Maria Chen on 5 September 2025",
             title: "The Power of Learning at Every Stage",
             title2: "Behind the Code: Stories and Resources for Every Student",
@@ -393,7 +367,7 @@ export const CARD_DATA = [
         },
         blog: {
             img: "/assets/images/webp/pupiloTwo.webp",
-            img2: "/assets/images/png/bloge4.png",
+            img2: "/assets/images/webp/blogFour.webp",
             date: "By Maria Chen on 5 September 2025",
             title: "Behind the Code: Stories and Resources for Every Student",
             paragraph:
@@ -404,7 +378,7 @@ export const CARD_DATA = [
                 {
                     id: "struggles-and-breakthroughs",
                     heading: "The Real Struggles Behind Learning to Code",
-                    img: "/assets/images/png/bloge1.png",
+                    img: "/assets/images/webp/blogOne.webp",
                     paragraph:
                         "Nobody talks about the hard parts enough. Here are the most common struggles students face — and how to overcome them:",
                     points: [
@@ -489,40 +463,41 @@ export const FAMILIES_DATA_LIST = [
     {
         name: "Kayla Steyn",
         description:
-            "My son shifted from watching cartoons to building interactive stories! Pupilo’s ScratchJr classes sparked his creativity.",
-        image: "/assets/images/webp/family-one.webp",
+            "My son shifted from watching cartoons to building interactive stories! Pupilo's ScratchJr classes sparked his creativity.",
+        image: "/assets/images/webp/familyOne.webp",
     },
     {
         name: "Naledi Moeketsi",
         description:
-            "I never thought my son would enjoy math, but through Pupilo’s game design classes, he’s learning coding and math at the same time.",
-        image: "/assets/images/webp/family-two.webp",
+            "I never thought my son would enjoy math, but through Pupilo's game design classes, he's learning coding and math at the same time.",
+        image: "/assets/images/webp/familyTwo.webp",
     },
     {
         name: "Johan Botha",
         description:
-            "The live coding sessions are fantastic! My daughter used to shy away from technology — now she’s proudly building animations in Scratch.",
-        image: "/assets/images/webp/family-three.webp",
+            "The live coding sessions are fantastic! My daughter used to shy away from technology — now she's proudly building animations in Scratch.",
+        image: "/assets/images/webp/familyThree.webp",
     },
     {
         name: "Kayla Steyn",
         description:
-            "My son shifted from watching cartoons to building interactive stories! Pupilo’s ScratchJr classes sparked his creativity.",
-        image: "/assets/images/webp/family-one.webp",
+            "My son shifted from watching cartoons to building interactive stories! Pupilo's ScratchJr classes sparked his creativity.",
+        image: "/assets/images/webp/familyOne.webp",
     },
     {
         name: "Naledi Moeketsi",
         description:
-            "I never thought my son would enjoy math, but through Pupilo’s game design classes, he’s learning coding and math at the same time.",
-        image: "/assets/images/webp/family-two.webp",
+            "I never thought my son would enjoy math, but through Pupilo's game design classes, he's learning coding and math at the same time.",
+        image: "/assets/images/webp/familyTwo.webp",
     },
     {
         name: "Johan Botha",
         description:
-            "The live coding sessions are fantastic! My daughter used to shy away from technology — now she’s proudly building animations in Scratch.",
-        image: "/assets/images/webp/family-three.webp",
+            "The live coding sessions are fantastic! My daughter used to shy away from technology — now she's proudly building animations in Scratch.",
+        image: "/assets/images/webp/familyThree.webp",
     },
 ];
+
 export const SOCIAL_ICONS = [
     {
         icon: "facebook",
@@ -545,6 +520,7 @@ export const SOCIAL_ICONS = [
         link: LINKEDIN,
     },
 ];
+
 export const CONTACT_ICONS = [
     {
         icon: "mail",

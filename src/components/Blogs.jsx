@@ -15,7 +15,7 @@ const Blogs = () => {
     return (
         <section className="w-full lg:mt-30 md:mt-20 mt-10 bg-[url('/assets/images/webp/s-tow.webp')] bg-cover bg-center py-20 px-4 relative overflow-hidden">
             <div className="max-w-285 mx-auto relative z-10">
-                <h2 className="text-white text-4xl sm:text-5xl font-semibold text-center mb-10 leading-120">
+                <h2 className="text-white text-3xl sm:text-5xl font-semibold text-center mb-10 leading-120">
                     Our Latest Blogs
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -26,7 +26,7 @@ const Blogs = () => {
                             }
                             className="bg-white rounded-2xl lg:max-w-[560.1px] w-full p-5 overflow-hidden flex flex-col cursor-pointer group"
                         >
-                            <div className="overflow-hidden  max-h-75.25">
+                            <div className="overflow-hidden min-h-60 min-[600px]:max-h-75.25">
                                 <img
                                     src={featuredCard.img}
                                     alt={featuredCard.title}
@@ -40,7 +40,7 @@ const Blogs = () => {
                                 <h3 className=" text-xl sm:text-custom-2xl font-semibold leading-120 mb-4">
                                     {featuredCard.title2}
                                 </h3>
-                                <p className="text-gray-500 text-base font-normal inter leading-160 flex-1 max-w-[514px]">
+                                <p className="text-grey text-base font-normal inter leading-160 flex-1 max-w-128.5">
                                     {featuredCard.paragraph2}
                                 </p>
                                 <Button
@@ -52,22 +52,20 @@ const Blogs = () => {
                     )}
                     <div className="flex flex-col gap-y-6">
                         {sideCards.map((card, index) => (
-                            <div
-                                onClick={() =>
-                                    navigate(card.title.toLowerCase().replaceAll(" ", "-"))
-                                }
+                            <div onClick={() =>
+                                navigate(card.title.toLowerCase().replaceAll(" ", "-"))
+                            }
                                 key={index}
-                                className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-row cursor-pointer group"
-                            >
-                                <div className="overflow-hidden w-[130.1px] sm:w-[160.1px] shrink-0">
+                                className="bg-white rounded-2xl overflow-hidden border border-[#0000001F] max-[556.1px] p-4 flex flex-col min-[600px]:flex-row cursor-pointer group">
+                                <div className="overflow-hidden min-[600px]:w-[160.1px] max-w-127.5 max-h-60 shrink-0">
                                     <img
                                         src={card.img2}
                                         alt={card.title}
-                                        className="w-full h-full object-cover rounded-[12px] group-hover:scale-105 transition duration-500"
+                                        className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition duration-500"
                                     />
                                 </div>
-                                <div className="pl-4 flex flex-col  flex-1">
-                                    <p className="text-[#8C52FF] text-sm font-normal leading-150">
+                                <div className=" min-[600px]:pl-4 flex flex-col flex-1">
+                                    <p className="text-[#8C52FF] mt-2 min-[600px]:mt-0 text-sm font-normal leading-150">
                                         {card.date}
                                     </p>
                                     <h3 className="text-black sm:text-xl text-sm font-medium leading-120 mt-4.25 mb-4">
@@ -76,7 +74,7 @@ const Blogs = () => {
                                     <p className="text-gray-500 sm:text-sm leading-150">
                                         {card.paragraph}
                                     </p>
-                                    <button className="mt-4 self-start underline  text-sm font-semibold text-black hover:text-[#8C52FF] transition flex items-center gap-2.5">
+                                    <button className="mt-4 self-start underline text-sm font-semibold text-black hover:text-[#8C52FF] transition flex items-center gap-2.5">
                                         Learn More <Icons icon={"next_arrow"} />
                                     </button>
                                 </div>
