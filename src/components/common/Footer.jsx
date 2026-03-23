@@ -5,7 +5,7 @@ import Icons from "./Icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white-grey ">
+    <footer className="w-full px-4 bg-white-grey ">
       <div className="max-w-285 w-full mx-auto">
         <div className="flex min-[1180px]:justify-between min-[1180px]:flex-row flex-col pt-12 lg:pt-20 pb-16">
           <div className="max-w-[338.1px]">
@@ -28,7 +28,7 @@ const Footer = () => {
                 required
                 type="email"
                 placeholder="Email Address"
-                className="flex-1 bg-transparent px-3 py-2.5 sm:py-0 text-sm outline-none w-full"
+                className="flex-1 bg-transparent px-5 py-2.5 sm:py-0 text-sm outline-none w-full"
               />
               <Button
                 type="submit"

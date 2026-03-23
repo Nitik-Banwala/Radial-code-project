@@ -98,7 +98,7 @@ export const CARD_DATA = [
                 {
                     id: "struggles-and-breakthroughs",
                     heading: "The Real Struggles Behind Learning to Code",
-                    img: "public/assets/images/webp/pupiloThree.webp",
+                    img: "/assets/images/webp/pupiloThree.webp",
                     paragraph:
                         "Nobody talks about the hard parts enough. Here are the most common struggles students face — and how to overcome them:",
                     points: [
