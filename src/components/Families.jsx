@@ -15,7 +15,7 @@ const Families = () => {
         text={"Hear What Families Say About Pupilo"}
         className={"md:text-left text-center"}
       />
-      <div className="max-w-312 w-full relative sm:px-14 px-4 ">
+      <div className="max-w-312 w-full relative sm:px-14 ">
         <Swiper
           centeredSlides={true}
           loop={true}
@@ -47,7 +47,7 @@ const Families = () => {
         >
           {FAMILIES_DATA_LIST.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="border border-[#5D61801F] max-w-88 justify-between sm:h-67.75 md:h-68.5 lg:h-71.5 xl:h-58 h-full shadow-[0px_0px_32px_0px_rgba(0,0,0,0.06)] rounded-3xl p-5.75 flex flex-col gap-4 hover:border-purple duration-200 ease-in">
+              <div className="border  border-[#5D61801F] max-w-88 justify-between sm:h-67.75 md:h-68.5 lg:h-71.5 xl:h-58 h-full shadow-[0px_0px_32px_0px_rgba(0,0,0,0.06)] rounded-3xl p-5.75 flex flex-col gap-4 hover:border-purple duration-200 ease-in">
                 <Icons icon={"rating"} />
                 <p className="leading-150 md:text-base text-sm text-black/70">
                   {item.description}
